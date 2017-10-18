@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="CodeIgniter Application Test Suite" tests="39" assertions="39" failures="1" errors="0" time="2.834578">
+    <testsuite name="Welcome_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\Welcome_test.php" fullPackage="Welcome" tests="3" assertions="3" failures="0" errors="0" time="0.108800">
+      <testcase name="test_index" class="Welcome_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\Welcome_test.php" line="13" assertions="1" time="0.045310"/>
+      <testcase name="test_method_404" class="Welcome_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\Welcome_test.php" line="19" assertions="1" time="0.039589"/>
+      <testcase name="test_APPPATH" class="Welcome_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\Welcome_test.php" line="25" assertions="1" time="0.023901"/>
+    </testsuite>
+    <testsuite name="Dashboard_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\dashboard_test.php" fullPackage="Dashboard" tests="2" assertions="2" failures="0" errors="0" time="0.116801">
+      <testcase name="test_index" class="Dashboard_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\dashboard_test.php" line="14" assertions="1" time="0.060885"/>
+      <testcase name="test_method_404" class="Dashboard_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\dashboard_test.php" line="22" assertions="1" time="0.055916"/>
+    </testsuite>
+    <testsuite name="Home_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\home_test.php" fullPackage="Home" tests="2" assertions="2" failures="0" errors="0" time="0.121275">
+      <testcase name="test_index" class="Home_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\home_test.php" line="10" assertions="1" time="0.063155"/>
+      <testcase name="test_method_404" class="Home_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\home_test.php" line="16" assertions="1" time="0.058120"/>
+    </testsuite>
+    <testsuite name="Home_dosen_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\homed_test.php" fullPackage="Home.dosen" tests="3" assertions="3" failures="0" errors="0" time="0.225108">
+      <testcase name="test_masuk_homed_gagal" class="Home_dosen_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\homed_test.php" line="14" assertions="1" time="0.079141"/>
+      <testcase name="test_index" class="Home_dosen_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\homed_test.php" line="21" assertions="1" time="0.085234"/>
+      <testcase name="test_method_404" class="Home_dosen_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\homed_test.php" line="29" assertions="1" time="0.060733"/>
+    </testsuite>
+    <testsuite name="Jadwal_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\jadwal_test.php" fullPackage="Jadwal" tests="5" assertions="5" failures="1" errors="0" time="0.434542">
+      <testcase name="test_masuk_gagal" class="Jadwal_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\jadwal_test.php" line="16" assertions="1" time="0.064540"/>
+      <testcase name="test_index" class="Jadwal_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\jadwal_test.php" line="24" assertions="1" time="0.106449"/>
+      <testcase name="test_create" class="Jadwal_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\jadwal_test.php" line="32" assertions="1" time="0.123759"/>
+      <testcase name="test_delete" class="Jadwal_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\jadwal_test.php" line="49" assertions="1" time="0.075696">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">Jadwal_test::test_delete
+Failed asserting that 0 matches expected 1.
+
+C:\xampp\htdocs\monitor\application\tests\controllers\jadwal_test.php:60
+</failure>
+      </testcase>
+      <testcase name="test_cre_gagal" class="Jadwal_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\jadwal_test.php" line="63" assertions="1" time="0.064098"/>
+    </testsuite>
+    <testsuite name="Login_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\login_test.php" fullPackage="Login" tests="4" assertions="4" failures="0" errors="0" time="0.287122">
+      <testcase name="test_valid" class="Login_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\login_test.php" line="14" assertions="1" time="0.063430"/>
+      <testcase name="test_index" class="Login_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\login_test.php" line="22" assertions="1" time="0.065056"/>
+      <testcase name="test_logout" class="Login_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\login_test.php" line="28" assertions="1" time="0.080070"/>
+      <testcase name="test_method_404" class="Login_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\login_test.php" line="34" assertions="1" time="0.078566"/>
+    </testsuite>
+    <testsuite name="Loginu_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\loginu_test.php" fullPackage="Loginu" tests="7" assertions="7" failures="0" errors="0" time="0.482978">
+      <testcase name="test_valid" class="Loginu_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\loginu_test.php" line="14" assertions="1" time="0.064966"/>
+      <testcase name="test_user" class="Loginu_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\loginu_test.php" line="22" assertions="1" time="0.070383"/>
+      <testcase name="test_dosen" class="Loginu_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\loginu_test.php" line="37" assertions="1" time="0.069375"/>
+      <testcase name="test_gagal" class="Loginu_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\loginu_test.php" line="52" assertions="1" time="0.070705"/>
+      <testcase name="test_index" class="Loginu_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\loginu_test.php" line="67" assertions="1" time="0.065629"/>
+      <testcase name="test_logout" class="Loginu_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\loginu_test.php" line="73" assertions="1" time="0.073201"/>
+      <testcase name="test_method_404" class="Loginu_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\loginu_test.php" line="79" assertions="1" time="0.068720"/>
+    </testsuite>
+    <testsuite name="Regd_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\regd_test.php" fullPackage="Regd" tests="3" assertions="3" failures="0" errors="0" time="0.305818">
+      <testcase name="test_index" class="Regd_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\regd_test.php" line="14" assertions="1" time="0.070625"/>
+      <testcase name="test_register" class="Regd_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\regd_test.php" line="20" assertions="1" time="0.158423"/>
+      <testcase name="test_method_404" class="Regd_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\regd_test.php" line="37" assertions="1" time="0.076770"/>
+    </testsuite>
+    <testsuite name="Register_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\register_test.php" fullPackage="Register" tests="3" assertions="3" failures="0" errors="0" time="0.249462">
+      <testcase name="test_index" class="Register_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\register_test.php" line="16" assertions="1" time="0.077971"/>
+      <testcase name="test_register" class="Register_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\register_test.php" line="22" assertions="1" time="0.114224"/>
+      <testcase name="test_method_404" class="Register_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\register_test.php" line="39" assertions="1" time="0.057267"/>
+    </testsuite>
+    <testsuite name="Regm_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\regm_test.php" fullPackage="Regm" tests="3" assertions="3" failures="0" errors="0" time="0.221918">
+      <testcase name="test_index" class="Regm_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\regm_test.php" line="14" assertions="1" time="0.078867"/>
+      <testcase name="test_register" class="Regm_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\regm_test.php" line="20" assertions="1" time="0.086738"/>
+      <testcase name="test_method_404" class="Regm_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\regm_test.php" line="37" assertions="1" time="0.056313"/>
+    </testsuite>
+    <testsuite name="Teko_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\teko_test.php" fullPackage="Teko" tests="4" assertions="4" failures="0" errors="0" time="0.280754">
+      <testcase name="test_index" class="Teko_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\teko_test.php" line="14" assertions="1" time="0.068787"/>
+      <testcase name="test_profile" class="Teko_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\teko_test.php" line="20" assertions="1" time="0.073915"/>
+      <testcase name="test_jadwal" class="Teko_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\teko_test.php" line="26" assertions="1" time="0.080141"/>
+      <testcase name="test_method_404" class="Teko_test" file="C:\xampp\htdocs\monitor\application\tests\controllers\teko_test.php" line="32" assertions="1" time="0.057911"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
