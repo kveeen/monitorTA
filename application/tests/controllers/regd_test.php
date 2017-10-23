@@ -9,29 +9,28 @@ class Regd_test extends TestCase
 	public function setUp()
 	{
 		$this->resetInstance();
+                $this->CI->load->model('M_account');
+		$this->objek = $this->CI->M_account;
 	}
 
-	public function test_index()
-	{
-		$output = $this->request('GET', '/admin/regd');
-		$this->assertContains('Pendaftaran Akun', $output);
-	}
-        
-        public function test_register()
+        public function test_index()
         {
                 $_SESSION['username'] = 'admin';
                 $_SESSION['group'] = '99';
+                $awal = $this->objek->getNumRow('Doni', 'don3', '12345', 1);
                 $output = $this->request(
 			'POST',
 			['regd', 'index'],
 			[
 			'nama' => 'Doni',
-			'username' => 'don1',
+			'username' => 'don3',
 			'password' => '12345',
-			'role' => '1',
+			'role' => 1,
 			]
 			);
-                $this->assertContains('<title>Notifikasi</title>', $output);
+                $akhir = $this->objek->getNumRow('Doni', 'don3', '12345', 1);
+                $this->assertEquals($akhir,$awal+1);
+                $this->objek->delete('Doni', 'don3', '12345', 1);
         }
 
 	public function test_method_404()
