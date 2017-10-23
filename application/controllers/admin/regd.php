@@ -7,12 +7,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Regd extends CI_Controller
 {
 	
-	function __construct()
-	{
+	public function __construct(){
 		parent::__construct();
-		$this->load->library(array('form_validation'));
-		$this->load->helper(array('url','form'));
-		$this->load->model('m_account');
+		if($this->session->userdata('group') != '99'){
+		$this->session->set_flashdata('error','Sorry, you are not logged in!');
+		redirect('home');
+	}
 	}
 
 	public function index(){
@@ -23,17 +23,23 @@ class Regd extends CI_Controller
 		if($this->form_validation->run() == FALSE) {
 			$this->load->view('account/d_register');
 		}else{
+			$this->load->helper('security');
+			$password = $this->input->post('password', TRUE);
+			$data['nama'] = $this->input->post('nama', TRUE);
+			$data['username'] = $this->input->post('username', TRUE);
+			$data['password'] = sha1($password);
+			$data['role'] = $this->input->post('role', TRUE);
 
-			$data['nama'] = $this->input->post('nama');
-			$data['username'] = $this->input->post('username');
-			$data['password'] = sha1($this->input->post('password'));
-			$data['role'] = $this->input->post('role');
-
-			$this->m_account->daftar($data);
+                        $this->m_account->daftar($data);
 
 			$pesan['message'] = "Pendaftaran berhasil";
 
 			$this->load->view('account/v_success',$pesan);
 		}
+	}
+
+	public function test(){
+		$total = $this->m_account->getNumRow('Doni', 'don3', '12345', '1');
+		echo "<script>alert('".$total."')</script>";
 	}
 }
